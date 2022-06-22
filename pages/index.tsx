@@ -1,7 +1,7 @@
-import React from "react";
+import { HomePage } from "../src/pages/HomePage";
 
-const HomePage = () => {
-  return <div>HomePage</div>;
+const index = () => {
+  return <HomePage />;
 };
 
-export default HomePage;
+export default index;
