@@ -67,7 +67,7 @@ export const SideBar = () => {
 
       <VStack w="full" spacing="8">
         {classes?.map((classProps) => (
-          <CardClassContainer classProps={classProps} />
+          <CardClassContainer key={classProps.id} classProps={classProps} />
         ))}
       </VStack>
     </VStack>
