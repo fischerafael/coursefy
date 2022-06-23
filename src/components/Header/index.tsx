@@ -5,7 +5,9 @@ export const Header = () => {
   return (
     <HStack w="full" height="full" px="8" justify="space-between" bg="gray.800">
       <Logo />
-      <Button colorScheme="cyan">Sair</Button>
+      <Button borderRadius="0" colorScheme="cyan">
+        Sair
+      </Button>
     </HStack>
   );
 };

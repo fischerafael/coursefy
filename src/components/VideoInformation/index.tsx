@@ -9,6 +9,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { AiOutlineLinkedin } from "react-icons/ai";
+import { navigateTo } from "../../utils/navigateTo";
 
 export const VideoInformation = () => {
   return (
@@ -44,6 +45,9 @@ export const VideoInformation = () => {
               fontSize={32}
               colorScheme="cyan"
               icon={<AiOutlineLinkedin />}
+              onClick={() =>
+                navigateTo("https://www.linkedin.com/in/fischerafael/")
+              }
             />
           </HStack>
         </VStack>
@@ -55,10 +59,29 @@ export const VideoInformation = () => {
           justify="flex-start"
           spacing="4"
         >
-          <Button colorScheme="cyan" w="full" p="8">
+          <Button
+            borderRadius="0"
+            colorScheme="cyan"
+            w="full"
+            p="8"
+            onClick={() =>
+              navigateTo("https://github.com/fischerafael/coursefy")
+            }
+          >
             Respositório Github
           </Button>
-          <Button colorScheme="cyan" variant="outline" w="full" p="8">
+          <Button
+            borderRadius="0"
+            colorScheme="cyan"
+            variant="outline"
+            w="full"
+            p="8"
+            onClick={() =>
+              navigateTo(
+                "https://www.youtube.com/channel/UCz75xXTimMhZkbK__XOM8hQ"
+              )
+            }
+          >
             Canal no Youtube
           </Button>
         </VStack>

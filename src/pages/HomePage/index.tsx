@@ -1,5 +1,6 @@
 import { Button, HStack, Image, Input, Text, VStack } from "@chakra-ui/react";
 import { Logo } from "../../components/Logo";
+import { navigateTo } from "../../utils/navigateTo";
 
 export const HomePage = () => {
   return (
@@ -55,7 +56,12 @@ export const HomePage = () => {
             type="email"
             placeholder="Email"
           />
-          <Button w="full" colorScheme="cyan" borderRadius="0">
+          <Button
+            onClick={() => navigateTo("/app/course/haushsua")}
+            w="full"
+            colorScheme="cyan"
+            borderRadius="0"
+          >
             Acessar
           </Button>
         </VStack>
