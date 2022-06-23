@@ -22,8 +22,21 @@ export const PrivatePageTemplate = ({ header, main, sidebar }: Props) => {
       </GridItem>
       <GridItem
         colSpan={1}
-        minH="90vh"
+        h="90vh"
         style={{ outline: "1px solid #2D3748" }}
+        overflowY="auto"
+        css={{
+          "&::-webkit-scrollbar": {
+            width: "8px",
+          },
+          "&::-webkit-scrollbar-track": {
+            width: "8px",
+          },
+          "&::-webkit-scrollbar-thumb": {
+            background: "#2D3748",
+            borderRadius: "8px",
+          },
+        }}
       >
         {main}
       </GridItem>
